@@ -1,7 +1,5 @@
-package config;
+package tobyspring.config;
 
-import config.autoconfig.DispatcherSevletConfig;
-import config.autoconfig.TomcatWebServerConfig;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.ElementType;
@@ -11,6 +9,6 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-@Import({DispatcherSevletConfig.class, TomcatWebServerConfig.class})
+@Import(MyAutoConfigImportSelector.class)
 public @interface EnableMyAutoConfiguration {
 }
