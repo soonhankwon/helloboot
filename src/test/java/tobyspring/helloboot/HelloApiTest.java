@@ -20,7 +20,7 @@ public class HelloApiTest {
 
         assertThat(res.getStatusCode()).isEqualTo(HttpStatus.OK);
         assertThat(res.getHeaders().getFirst(HttpHeaders.CONTENT_TYPE)).startsWith(MediaType.TEXT_PLAIN_VALUE);
-        assertThat(res.getBody()).isEqualTo("Hello SoonKyu");
+        assertThat(res.getBody()).isEqualTo("*Hello SoonKyu*");
     }
 
     @Test
