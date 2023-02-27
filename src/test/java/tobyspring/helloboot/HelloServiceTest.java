@@ -9,7 +9,7 @@ public class HelloServiceTest {
     void simpleHelloService() {
         SimpleHelloService helloService = new SimpleHelloService();
 
-        String ret =  helloService.sayHello("Test");
+        String ret = helloService.sayHello("Test");
         assertThat(ret).isEqualTo("Hello Test");
     }
 
